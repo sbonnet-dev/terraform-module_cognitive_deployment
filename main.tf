@@ -10,11 +10,4 @@ resource "azurerm_cognitive_deployment" "gpt-35" {
   scale {
     type = "Standard"
   }
-
-  tags = {
-    project     = var.project
-    environment = var.environment
-    owner       = var.owner
-  }
-
 }
